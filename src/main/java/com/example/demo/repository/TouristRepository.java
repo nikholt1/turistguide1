@@ -16,8 +16,8 @@ public class TouristRepository {
 
     public void populateTouristAttraction() {
         attractions.add(new TouristAttraction("Tivoli", "Verdens ældste tivoli"));
-        attractions.add(new TouristAttraction("Tivoli2", "Verdens ældste tivoli2"));
-        attractions.add(new TouristAttraction("Tivoli3", "Verdens ældste tivoli3"));
+        attractions.add(new TouristAttraction("Den Lille Havfrue", "Verdens ældste havfrue"));
+        attractions.add(new TouristAttraction("Operaen", "Verdens ældste opera"));
 
 
     }
