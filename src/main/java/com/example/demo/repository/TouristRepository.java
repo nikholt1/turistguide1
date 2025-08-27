@@ -10,6 +10,10 @@ import java.util.List;
 public class TouristRepository {
     List<TouristAttraction> attractions = new ArrayList<>();
 
+    public TouristRepository() {
+        populateTouristAttraction();
+    }
+
     public void populateTouristAttraction() {
         attractions.add(new TouristAttraction("Tivoli", "Verdens ældste tivoli"));
         attractions.add(new TouristAttraction("Tivoli2", "Verdens ældste tivoli2"));
@@ -25,6 +29,15 @@ public class TouristRepository {
     public void addTouristAttraction(TouristAttraction touristAttraction) {
         attractions.add(touristAttraction);
     }
+
+    public void updateTouristAttraction(String name, String updateDescription) {
+        for (TouristAttraction t : getTouristAttractions()) {
+            if (name.equals(t.getName())) {
+                t.setDescription(updateDescription);
+            }
+        }
+    }
+
 
     public void removeTouristAttraction(String name) {
         for (TouristAttraction t : attractions) {

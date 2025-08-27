@@ -21,6 +21,19 @@ public class TouristService {
         return touristRepository.getTouristAttractions();
     }
 
+    public TouristAttraction getAttraction(String name) {
+        for (TouristAttraction t : getTouristAttractions()) {
+            if (name.equals(t.getName())) {
+                return t;
+            }
+        }
+        return null;
+    }
+
+    public void updateTouristAttraction(String name, String updateDescription) {
+        touristRepository.updateTouristAttraction(name, updateDescription);
+    }
+
     public void addTouristAttraction(TouristAttraction touristAttraction) {
         touristRepository.addTouristAttraction(touristAttraction);
     }
