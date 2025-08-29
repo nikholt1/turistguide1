@@ -17,14 +17,14 @@ body {
           'nav' auto
           'footer' auto
         / 1fr;
-
+    font-family: Futura, serif;
 }
 
 @media (min-width: 40em) {
     body {
         grid: 'header header' auto
               'nav main' 1fr
-              'nav footer' auto
+              'footer footer' auto
             / 12em 1fr;
 
     }
@@ -34,3 +34,65 @@ header { grid-area: header; }
 nav { grid-area: nav; }
 main { grid-area: main; }
 footer { grid-area: footer; }
+
+header {
+    background-color: black;
+    border-radius: 15px;
+    color: beige;
+    justify-items: center;
+}
+
+nav {
+    background-color: rgba(248, 243, 237, 0.84);
+    border-radius: 15px;
+
+}
+
+nav h4 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+nav li {
+    text-decoration: none;
+    margin-bottom: 60px;
+
+
+}
+
+a:hover {
+    color: green;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+    background-size: auto;
+}
+
+nav button {
+    margin-top: 250px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
