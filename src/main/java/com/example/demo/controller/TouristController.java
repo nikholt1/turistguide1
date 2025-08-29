@@ -42,7 +42,7 @@ public class TouristController {
     }
 
     @PostMapping("delete/{name}")
-    public ResponseEntity<List<TouristAttraction>> deleteAttraction(@RequestBody String name) {
+    public ResponseEntity<List<TouristAttraction>> deleteAttraction(@PathVariable String name) {
         service.removeTouristAttraction(name);
         return new ResponseEntity<>(service.getTouristAttractions(), HttpStatus.OK);
     }
