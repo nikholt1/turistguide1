@@ -23,7 +23,7 @@ body {
 @media (min-width: 40em) {
     body {
         grid: 'header header' auto
-              'nav man' 1fr
+              'nav main' 1fr
               'nav footer' auto
             / 12em 1fr;
 
