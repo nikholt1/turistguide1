@@ -15,6 +15,7 @@ body {
     grid-gap: 1em;
     grid: 'header' auto
           'nav' auto
+          'images' auto
           'footer' auto
         / 1fr;
     font-family: Futura, serif;
@@ -24,6 +25,7 @@ body {
     body {
         grid: 'header header' auto
               'nav main' 1fr
+        'images images' auto
               'footer footer' auto
             / 12em 1fr;
 
@@ -34,6 +36,9 @@ header { grid-area: header; }
 nav { grid-area: nav; }
 main { grid-area: main; }
 footer { grid-area: footer; }
+.images {
+    grid-area: images;
+}
 
 header {
     background-color: black;
@@ -95,4 +100,12 @@ footer {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.images {
+    justify-content: space-evenly;
+}
+.images img {
+    max-width: 300px;
+    max-height: 200px;
 }
